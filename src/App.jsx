@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="all-container">
       <Header />
-      <div>
+      <div className="foods-container">
         {menu.map((item) => {
           return (
             <FoodItem
