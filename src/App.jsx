@@ -1,28 +1,14 @@
 import React from "react";
 import "./assets/style.css";
 import Header from "./components/Header/Header";
-import menu from "./assets/data";
-import FoodItem from "./components/FoodItem/FoodItem";
+import Home from "./components/Home/Home";
 function App() {
   return (
     <div className="all-container">
       <Header />
-      <div className="foods-container">
-        {menu.map((item) => {
-          return (
-            <FoodItem
-              key={item.id}
-              image={item.img}
-              price={item.price}
-              title={item.title}
-              description={item.desc}
-            />
-          );
-        })}
-      </div>
+      <Home />
     </div>
   );
 }
 
 export default App;
-
