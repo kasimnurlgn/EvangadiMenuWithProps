@@ -5,7 +5,7 @@ class Home extends Component {
   render() {
     return (
       <div className="foods-container">
-        {menu.map((item) => {
+        {menu?.map((item) => {
           return (
             <FoodItem
               key={item.id}
